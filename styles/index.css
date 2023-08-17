@@ -1,0 +1,14 @@
+.welcome-page_inner_header_inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+.welcome-page_inner_header_inner_left_inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10%;
+}
+.welcome-page_inner_header_inner_left_inner_switch-mode #light-mode-switch {
+  display: none;
+}/*# sourceMappingURL=index.css.map */
