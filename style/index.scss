@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Lato:wght@900&family=Noto+Sans+Shavian&display=swap');
+
+body {
+    background-color: rgb(227, 234, 236);
+}
+
+h1 {
+    margin: 0;
+}
+
+.p {
+    color: #fff;
+}
+
+
+body.dark {
+    background-color: #000;
+    transition: all 0.3s ease-in;
+}
+
+.welcome-page_inner {
+    &_header_inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &_right_inner {
+            padding-inline-start: 2rem;
+
+            h1 {
+                color: black;
+                font-style: oblique;
+                font-size: 2rem;
+                font-weight: 900;
+                font-family: 'Bricolage Grotesque', sans-serif;
+                font-family: 'Lato', sans-serif;
+                font-family: 'Noto Sans Shavian', sans-serif;
+            }
+
+            .h1 {
+                color: #ffffff;
+                transition: all 0.3s ease;
+            }
+        }
+
+        &_left_inner_switch-mode {
+            .switch {
+                position: relative;
+                width: 70px;
+                height: 30px;
+                border-radius: 100px;
+                background-color: rgb(0, 128, 107);
+                transition: all 0.3s ease;
+                cursor: pointer;
+            }
+
+            .switch::before {
+                content: "";
+                position: absolute;
+                background-color: white;
+                height: 25px;
+                width: 25px;
+                border-radius: 50%;
+                top: 55%;
+                left: 4px;
+                transform: translateY(-55%);
+                transition: all 0.3s ease-in;
+            }
+
+            .switch.active::before {
+                background-color: #000;
+                left: calc(100% - 20px - 8px)
+            }
+        }
+
+    }
+
+    &_section {
+        text-align: left;
+        padding-inline-start: 2rem;
+        padding-top: 4rem;
+        margin-block-start: 2rem;
+
+    }
+}
