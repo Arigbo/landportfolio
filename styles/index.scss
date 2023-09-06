@@ -2,16 +2,14 @@
 
 body {
     background-color: rgb(227, 234, 236);
+    // font-family: 'Bricolage Grotesque', sans-serif;
+    // font-family: 'Lato', sans-serif;
+    font-family: 'Noto Sans Shavian', sans-serif;
 }
 
 h1 {
     margin: 0;
 }
-
-.p {
-    color: #fff;
-}
-
 
 body.dark {
     background-color: #000;
@@ -25,16 +23,13 @@ body.dark {
         align-items: center;
 
         &_right_inner {
-            padding-inline-start: 2rem;
+            padding-inline: 2rem;
 
             h1 {
                 color: black;
-                font-style: oblique;
-                font-size: 2rem;
+                font-size: 3rem;
                 font-weight: 900;
-                font-family: 'Bricolage Grotesque', sans-serif;
-                font-family: 'Lato', sans-serif;
-                font-family: 'Noto Sans Shavian', sans-serif;
+                transition: all 0.3s ease-in;
             }
 
             .h1 {
@@ -50,7 +45,6 @@ body.dark {
                 height: 30px;
                 border-radius: 100px;
                 background-color: rgb(0, 128, 107);
-                transition: all 0.3s ease;
                 cursor: pointer;
             }
 
@@ -69,6 +63,7 @@ body.dark {
 
             .switch.active::before {
                 background-color: #000;
+                transition: all 0.3s ease-in;
                 left: calc(100% - 20px - 8px)
             }
         }
@@ -77,9 +72,44 @@ body.dark {
 
     &_section {
         text-align: left;
-        padding-inline-start: 2rem;
+        padding-inline: 2rem;
         padding-top: 4rem;
-        margin-block-start: 2rem;
+
+        &-one {
+            display: grid;
+   grid-template-columns: 2fr 1fr;
+   grid-template-rows: 1fr;
+   align-items: center;
+
+            h5 {
+                margin: 0;
+                padding: 0;
+                color: black;
+                font-size: 2rem;
+                font-weight: 900;
+                transition: all 0.3s ease-in;
+            }
+
+            .h5 {
+                color: #fff;
+                transition: all 0.3s ease-in;
+            }
+            p{
+                padding: 0;
+                margin: 0;
+                font-size: 1.3rem;
+                font-style: italic;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+            &_pdp {
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                }
+            }
+        }
 
     }
 }

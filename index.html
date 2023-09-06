@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/styles/font-awesome.min.css">
     <link rel="stylesheet" href="/styles/index.css">
 </head>
 <!-- <script src="/index.js"></script> -->
@@ -36,10 +36,21 @@
                 </div>
             </div>
             <div class="welcome-page_inner_section">
-                <div class="welcome-page_inner_section_one">
-                    <div class="welcome-page_inner_section_one_text">
-                        <p><h1>HEY I'M JESSE, A FRONT-END WEBDEV</h1></p>
+                <div class="welcome-page_inner_section-one">
+                    <div class="welcome-page_inner_section-one_text">
+                        <h5>HEY, I'M JESSE, A FRONT-END WEBDEV</p>
+                            <div class="welcome_page_inner_section-one_text_vibe">
+                                <p>Developer by Night Overthinker by Day</p>
+                            </div>
+                            <div class="welcome_page_inner_section-one_text_social-media-hdl">
+                                <div class="whatsapp">
+                                    
+                                </div>
+                            </div>
                     </div>
+                   <div class="welcome-page_inner_section-one_pdp">
+                    <img src="/images/pdp-edited2.jpg" alt="" srcset="">
+                   </div>
                 </div>
             </div>
         </div>
@@ -59,11 +70,11 @@
             document.querySelector("body").classList.add("dark");
             document.querySelector(".switch").classList.add("active");
             document.querySelector("h1").classList.add("h1")
-            document.querySelector("p").classList.add("p")
+            document.querySelector("h5").classList.add("h5")
         }
         document.querySelector(".switch").addEventListener("click", () => document.querySelector(".switch").classList.toggle("active"))
         document.querySelector(".switch").addEventListener("click", () => document.querySelector(".welcome-page_inner_header_inner_right_inner_initials").classList.toggle("h1"))
-        document.querySelector(".switch").addEventListener("click", () => document.querySelector("p").classList.toggle("p"))
+        document.querySelector(".switch").addEventListener("click", () => document.querySelector("h5").classList.toggle("h5"))
     </script>
 </body>
 
