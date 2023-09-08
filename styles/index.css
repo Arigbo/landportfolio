@@ -36,7 +36,7 @@ body.dark {
   width: 70px;
   height: 30px;
   border-radius: 100px;
-  background-color: rgb(0, 128, 107);
+  background-color: black;
   cursor: pointer;
 }
 .welcome-page_inner_header_inner_left_inner_switch-mode .switch::before {
@@ -46,7 +46,7 @@ body.dark {
   height: 25px;
   width: 25px;
   border-radius: 50%;
-  top: 55%;
+  top: 54%;
   left: 4px;
   transform: translateY(-55%);
   transition: all 0.3s ease-in;
@@ -54,7 +54,10 @@ body.dark {
 .welcome-page_inner_header_inner_left_inner_switch-mode .switch.active::before {
   background-color: #000;
   transition: all 0.3s ease-in;
-  left: calc(100% - 20px - 8px);
+  left: calc(100% - 19px - 8px);
+}
+.welcome-page_inner_header_inner_left_inner_switch-mode .switch.active {
+  background-color: white;
 }
 .welcome-page_inner_section {
   text-align: left;
@@ -71,8 +74,8 @@ body.dark {
   margin: 0;
   padding: 0;
   color: black;
-  font-size: 2rem;
-  font-weight: 900;
+  font-size: 3rem;
+  font-weight: 300;
   transition: all 0.3s ease-in;
 }
 .welcome-page_inner_section-one .h5 {
@@ -85,6 +88,25 @@ body.dark {
   font-size: 1.3rem;
   font-style: italic;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  transition: all 0.3s ease;
+}
+.welcome-page_inner_section-one p:hover {
+  color: yellowgreen;
+  transition: all 0.3s ease;
+}
+.welcome-page_inner_section-one .welcome_page_inner_section-one_text_social-media-hdl {
+  display: flex;
+  align-items: center;
+}
+.welcome-page_inner_section-one .welcome_page_inner_section-one_text_social-media-hdl div {
+  margin-inline-end: 4rem;
+}
+.welcome-page_inner_section-one .welcome_page_inner_section-one_text_social-media-hdl button {
+  padding-inline: 1rem;
+  padding-block: 1;
+}
+.welcome-page_inner_section-one .welcome_page_inner_section-one_text_social-media-hdl button i {
+  font-size: 1rem;
 }
 .welcome-page_inner_section-one_pdp img {
   width: 100%;

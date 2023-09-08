@@ -40,17 +40,23 @@
                     <div class="welcome-page_inner_section-one_text">
                         <h5>HEY, I'M JESSE, A FRONT-END WEBDEV</p>
                             <div class="welcome_page_inner_section-one_text_vibe">
-                                <p>Developer by <span><i class="fa-solid fa-moon"></i></span> Overthinker by Day</p>
+                                <p>Developer by Night, Overthinker by Day</p>
                             </div>
                             <div class="welcome_page_inner_section-one_text_social-media-hdl">
                                 <div class="whatsapp">
-                                    
+                                  <button type="submit">  <i class="fa-solid fa-moon">whatsapp</i></button>
+                                </div>
+                                <div class="facebook">
+                                  <button type="submit">  <i class="fa-solid fa">facebook</i></button>
+                                </div>
+                                <div class="thread">
+                                  <button type="submit">  <i class="fa-solid fa">thread</i></button>
                                 </div>
                             </div>
                     </div>
-                   <div class="welcome-page_inner_section-one_pdp">
-                    <img src="/images/pdp-edited2.jpg" alt="" srcset="">
-                   </div>
+                    <div class="welcome-page_inner_section-one_pdp">
+                        <img src="/images/pdp-edited2.jpg" alt="" srcset="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -71,10 +77,12 @@
             document.querySelector(".switch").classList.add("active");
             document.querySelector("h1").classList.add("h1")
             document.querySelector("h5").classList.add("h5")
+            document.querySelector("p").classList.add("p")
         }
         document.querySelector(".switch").addEventListener("click", () => document.querySelector(".switch").classList.toggle("active"))
-        document.querySelector(".switch").addEventListener("click", () => document.querySelector(".welcome-page_inner_header_inner_right_inner_initials").classList.toggle("h1"))
+        document.querySelector(".switch").addEventListener("click", () => document.querySelector("h1").classList.toggle("h1"))
         document.querySelector(".switch").addEventListener("click", () => document.querySelector("h5").classList.toggle("h5"))
+        document.querySelector(".switch").addEventListener("click", () => document.querySelector("p").classList.toggle("p"))
     </script>
 </body>
 
