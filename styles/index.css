@@ -27,6 +27,9 @@ body.dark {
   font-weight: 900;
   transition: all 0.3s ease-in;
 }
+.welcome-page_inner_header_inner_right_inner h1 span {
+  color: yellowgreen;
+}
 .welcome-page_inner_header_inner_right_inner .h1 {
   color: #ffffff;
   transition: all 0.3s ease;
@@ -77,6 +80,19 @@ body.dark {
   font-size: 3rem;
   font-weight: 300;
   transition: all 0.3s ease-in;
+  text-decoration-line: line-through;
+}
+.welcome-page_inner_section-one h5 span {
+  position: fixed;
+  top: 34%;
+  z-index: 1;
+}
+.welcome-page_inner_section-one h5 .green {
+  position: relative;
+  border: 1px yellowgreen;
+  height: 1rem;
+  background-color: yellowgreen;
+  width: 20;
 }
 .welcome-page_inner_section-one .h5 {
   color: #fff;
@@ -89,6 +105,10 @@ body.dark {
   font-style: italic;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   transition: all 0.3s ease;
+}
+.welcome-page_inner_section-one p svg {
+  background-color: #fff;
+  width: 1rem;
 }
 .welcome-page_inner_section-one p:hover {
   color: yellowgreen;
