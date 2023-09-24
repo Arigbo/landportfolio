@@ -70,6 +70,9 @@ button {
 
         &_left_inner_switch-mode {
             .switch {
+                i{
+                    color: red;
+                }
                 position: relative;
                 width: 70px;
                 height: 30px;
@@ -79,6 +82,10 @@ button {
             }
 
             .switch::before {
+                i{
+                    color: red;
+                    z-index: 1;
+                }
                 content: "";
                 position: absolute;
                 background-color: white;
@@ -92,9 +99,13 @@ button {
             }
 
             .switch.active::before {
+                i{
+                    color: black;
+                }
                 background-color: #000;
                 transition: all 0.3s ease-in;
                 left: calc(100% - 19px - 8px)
+           
             }
 
             .switch.active {
