@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Lato:wght@900&family=Noto+Sans+Shavian&display=swap");
 body {
   background-color: rgb(227, 234, 236);
-  font-family: "Noto Sans Shavian", sans-serif;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 h1 {
@@ -11,6 +12,28 @@ h1 {
 body.dark {
   background-color: #000;
   transition: all 0.3s ease-in;
+}
+body.dark .p {
+  color: #fff;
+}
+body.dark .h1 {
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+body.dark .h5 {
+  color: #fff;
+  transition: all 0.3s ease-in;
+}
+body.dark ul li {
+  color: white;
+}
+body.dark i {
+  color: #fff;
+}
+
+button {
+  padding-inline: 2rem;
+  padding-block: 1rem;
 }
 
 .welcome-page_inner_header_inner {
@@ -29,10 +52,6 @@ body.dark {
 }
 .welcome-page_inner_header_inner_right_inner h1 span {
   color: yellowgreen;
-}
-.welcome-page_inner_header_inner_right_inner .h1 {
-  color: #ffffff;
-  transition: all 0.3s ease;
 }
 .welcome-page_inner_header_inner_left_inner_switch-mode .switch {
   position: relative;
@@ -67,69 +86,93 @@ body.dark {
   padding-inline: 2rem;
   padding-top: 4rem;
 }
-.welcome-page_inner_section-one {
+.welcome-page_inner_section-one.de-active {
+  display: none;
+}
+.welcome-page_inner_section-one_inner {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
   align-items: center;
 }
-.welcome-page_inner_section-one h5 {
+.welcome-page_inner_section-one_inner h5 {
   margin: 0;
   padding: 0;
   color: black;
   font-size: 3rem;
-  font-weight: 300;
-  transition: all 0.3s ease-in;
-  text-decoration-line: line-through;
-}
-.welcome-page_inner_section-one h5 span {
-  position: fixed;
-  top: 34%;
-  z-index: 1;
-}
-.welcome-page_inner_section-one h5 .green {
-  position: relative;
-  border: 1px yellowgreen;
-  height: 1rem;
-  background-color: yellowgreen;
-  width: 20;
-}
-.welcome-page_inner_section-one .h5 {
-  color: #fff;
+  font-weight: 500;
   transition: all 0.3s ease-in;
 }
-.welcome-page_inner_section-one p {
-  padding: 0;
+.welcome-page_inner_section-one_inner h5 span {
   margin: 0;
+  padding: 0;
+}
+.welcome-page_inner_section-one_inner p {
+  padding: 0;
   font-size: 1.3rem;
   font-style: italic;
+  font-weight: 900;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   transition: all 0.3s ease;
 }
-.welcome-page_inner_section-one p svg {
-  background-color: #fff;
-  width: 1rem;
-}
-.welcome-page_inner_section-one p:hover {
+.welcome-page_inner_section-one_inner p:hover {
   color: yellowgreen;
   transition: all 0.3s ease;
 }
-.welcome-page_inner_section-one .welcome_page_inner_section-one_text_social-media-hdl {
+.welcome-page_inner_section-one_inner_text_social-media-hdl {
   display: flex;
   align-items: center;
+  margin-block-start: 2rem;
 }
-.welcome-page_inner_section-one .welcome_page_inner_section-one_text_social-media-hdl div {
+.welcome-page_inner_section-one_inner_text_social-media-hdl div {
   margin-inline-end: 4rem;
+  cursor: pointer;
 }
-.welcome-page_inner_section-one .welcome_page_inner_section-one_text_social-media-hdl button {
-  padding-inline: 1rem;
-  padding-block: 1;
+.welcome-page_inner_section-one_inner_text_social-media-hdl div i {
+  font-size: 2.5rem;
+  font-weight: 0;
 }
-.welcome-page_inner_section-one .welcome_page_inner_section-one_text_social-media-hdl button i {
-  font-size: 1rem;
-}
-.welcome-page_inner_section-one_pdp img {
+.welcome-page_inner_section-one_inner_pdp img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
+}
+.welcome-page_inner_section-one i {
+  cursor: pointer;
+}
+.welcome-page_inner_section-two {
+  display: none;
+  position: relative;
+  height: 0;
+  transition: all 0.5s ease;
+}
+.welcome-page_inner_section-two.active {
+  display: block;
+  position: relative;
+  height: 100%;
+  transition: all 0.5s ease;
+}
+.welcome-page_inner_section-two_projects_inner {
+  border: 1px solid;
+  padding: 1rem;
+}
+.welcome-page_inner_section-two_projects_inner_header-box {
+  border: 1px solid;
+  padding: 1rem;
+}
+.welcome-page_inner_section-two_projects_inner_header-box ul {
+  border: 1px solid;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.welcome-page_inner_section-two_projects_inner_header-box ul li {
+  list-style: none;
+}
+.welcome-page_inner_section-two_buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.welcome-page_inner_section-two_buttons i {
+  cursor: pointer;
 }/*# sourceMappingURL=index.css.map */
