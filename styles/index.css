@@ -1,9 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Lato:wght@900&family=Noto+Sans+Shavian&display=swap");
 body {
   background-color: rgb(227, 234, 236);
-  font-family: "Bricolage Grotesque", sans-serif;
-  font-family: "Lato", sans-serif;
-  font-family: "Noto Sans Shavian", sans-serif;
+  font-family: var(--fa-style-family, "Font Awesome 6 Free");
+  font-weight: var(--fa-style, 900);
 }
 
 h1 {
@@ -50,6 +48,8 @@ button {
   font-size: 3rem;
   font-weight: 900;
   transition: all 0.3s ease-in;
+  font-family: var(--fa-style-family, "Font Awesome 6 Free");
+  font-weight: var(--fa-style, 900);
 }
 .welcome-page_inner_header_inner_right_inner h1 span {
   color: yellowgreen;
@@ -96,13 +96,11 @@ button {
   text-align: left;
   padding-inline: 2rem;
   padding-top: 4rem;
-}
-.welcome-page_inner_section-one.de-active {
-  display: none;
+  margin-top: 1rem;
 }
 .welcome-page_inner_section-one_inner {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 2fr 0.1fr 1.5fr;
   align-items: center;
 }
 .welcome-page_inner_section-one_inner h5 {
@@ -119,10 +117,8 @@ button {
 }
 .welcome-page_inner_section-one_inner p {
   padding: 0;
-  font-size: 1.3rem;
-  font-style: italic;
+  font-size: 1rem;
   font-weight: 900;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   transition: all 0.3s ease;
 }
 .welcome-page_inner_section-one_inner p:hover {
@@ -141,49 +137,17 @@ button {
 .welcome-page_inner_section-one_inner_text_social-media-hdl div i {
   font-size: 2.5rem;
   font-weight: 0;
+  color: #000;
 }
 .welcome-page_inner_section-one_inner_pdp img {
   width: 100%;
-  height: 100%;
+  height: auto;
   border-radius: 50%;
 }
-.welcome-page_inner_section-one i {
+.welcome-page_inner_section-one_next-button {
+  margin: 2rem 0rem 2rem 0rem;
+}
+.welcome-page_inner_section-one_next-button i {
   cursor: pointer;
-}
-.welcome-page_inner_section-two {
-  display: none;
-  position: relative;
-  height: 0;
-  transition: all 0.5s ease;
-}
-.welcome-page_inner_section-two.active {
-  display: block;
-  position: relative;
-  height: 100%;
-  transition: all 0.5s ease;
-}
-.welcome-page_inner_section-two_projects_inner {
-  border: 1px solid;
-  padding: 1rem;
-}
-.welcome-page_inner_section-two_projects_inner_header-box {
-  border: 1px solid;
-  padding: 1rem;
-}
-.welcome-page_inner_section-two_projects_inner_header-box ul {
-  border: 1px solid;
-  padding: 1rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.welcome-page_inner_section-two_projects_inner_header-box ul li {
-  list-style: none;
-}
-.welcome-page_inner_section-two_buttons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.welcome-page_inner_section-two_buttons i {
-  cursor: pointer;
+  color: #000;
 }/*# sourceMappingURL=index.css.map */

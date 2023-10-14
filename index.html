@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
     <link rel="stylesheet" href="/styles/index.css">
-    <link rel="stylesheet" href="/styles/fontawesome-6.3.0/css/all.css">
     <link rel="stylesheet" href="/styles/fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.css">
 </head>
 <!-- <script src="/index.js"></script> -->
@@ -30,8 +29,6 @@
                             <!-- ALREADY MADE MODE SELECTORS -->
                             <div class="welcome-page_inner_header_inner_left_inner_switch-mode">
                                 <div class="switch">
-                                    <i class="fa-solid fa-moon"></i>
-                                    <i class="fa-solid fa-x"></i>
                                 </div>
                             </div>
 
@@ -40,7 +37,7 @@
                 </div>
             </div>
             <div class="welcome-page_inner_section">
-                <div class="welcome-page_inner_section-one">
+                <div class="welcome-page_inner_section-one on">
                     <div class="welcome-page_inner_section-one_inner">
                         <div class="welcome-page_inner_section-one_inner_text">
                             <h5><span>HEY, I'M JESSE, </span><span>A FRONT-END WEB-DEV</span></h5>
@@ -49,17 +46,22 @@
                             </div>
                             <div class="welcome-page_inner_section-one_inner_text_social-media-hdl">
                                 <div class="whatsapp">
-                               <a title="whatsapp" href="https://wa.link/hgd3jd"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a title="whatsapp" href="https://wa.link/hgd3jd"><i
+                                            class="fa-brands fa-whatsapp"></i></a>
                                 </div>
                                 <div class="facebook">
-                              <a title="facebook" href="https://www.facebook.com/profile.php?id=100079128422811"><i class="fa-brands fa-facebook"></i></a>
+                                    <a title="facebook"
+                                        href="https://www.facebook.com/profile.php?id=100079128422811"><i
+                                            class="fa-brands fa-facebook"></i></a>
                                 </div>
                                 <div class="thread">
-                               <a title="threads" href="https://www.threads.net/@arigbojesse75"><i class="fa-brands fa-threads"></i></a>
+                                    <a title="threads" href="https://www.threads.net/@arigbojesse75"><i
+                                            class="fa-brands fa-threads"></i></a>
                                 </div>
                                 <div class="github">
-                                    <a title="github" href="https://www.threads.net/@arigbojesse75"><i class="fa-brands fa-github"></i></a>
-                                     </div>
+                                    <a title="github" href="https://www.threads.net/@arigbojesse75"><i
+                                            class="fa-brands fa-github"></i></a>
+                                </div>
                             </div>
 
                         </div>
@@ -69,49 +71,28 @@
                         </div>
                     </div>
                     <div class="welcome-page_inner_section-one_next-button">
-                        <i class="fa-solid next">NEXT<i class="fa-solid fa-chevron-right"><i class="fa-solid fa-chevron-right"></i></i></i>
+                        <a href="projects.html"> <i class="fa-solid next">NEXT<i class="fa-solid fa-chevron-right"><i
+                                        class="fa-solid fa-chevron-right"></i></i></i></a>
                     </div>
                 </div>
-                <div class="welcome-page_inner_section-two">
-                    <div class="welcome-page_inner_section-two_projects">
-                        <div class="welcome-page_inner_section-two_projects_inner">
-                            <div class="welcome-page_inner_section-two_projects_inner_header-box">
-                                <ul class="welcome-page_inner_section-two_inner_projects_inner_header-box_inner">
-                                    <li
-                                        class="welcome-page_inner_section-two_projects_inner_header-box_inner_complete-projects">
-                                        <h1>COMPLETE PROJECT</h1>
-                                    </li>
-                                    <li
-                                        class="welcome-page_inner_section-two_projects_inner_header-box_inner_incomplete-projects">
-                                        <h1>INCOMPLETE PROJECT</h1>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="welcome-page_inner_section-two_buttons">
-                        <div class="welcome-page_inner_section-two_buttons_previous">
-                            <i class="fa-solid fa-chevron-left previous"><i class="fa-solid fa-chevron-left"></i>Previous</i>
-                        </div>
-                        <div class="welcome-page_inner_section-two_buttons_next">
-                            <i class="fa-solid next">NEXT<i class="fa-solid fa-chevron-right"><i class="fa-solid fa-chevron-right"></i></i></i>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>
 
     <script>
+
         let root = localStorage.getItem("mode");
-        let page = localStorage.getItem("page")
+
         document.querySelector(".switch").addEventListener("click", () => {
             document.querySelector("body").classList.toggle("dark");
+
             if (!document.querySelector("body").classList.contains("dark")) {
                 return localStorage.setItem("mode", "light");
             }
             localStorage.setItem("mode", "dark");
         })
+
         if (root && root === "dark") {
             document.querySelector("body").classList.add("dark");
             document.querySelector(".switch").classList.add("active");
@@ -119,36 +100,13 @@
             document.querySelector("h5").classList.add("h5")
             document.querySelector("p").classList.add("p")
         }
-        document.querySelector(".next").addEventListener("click", () => {
-            document.querySelector(".welcome-page_inner_section-two").classList.toggle("active")
-
-            if (!document.querySelector(".welcome-page_inner_section-two").classList.contains("active")) {
-                return localStorage.setItem("page", "page1")
-            }
-            localStorage.setItem("page", "page2")
-        })
-
-        if (page && page == "page2") {
-            document.querySelector(".welcome-page_inner_section-two").classList.add("active")
-            document.querySelector(".welcome-page_inner_section-one").classList.add("de-active")
-        }
-        document.querySelector(".next").addEventListener("click", () => document.querySelector(".welcome-page_inner_section-one").classList.add("de-active"))
-        document.querySelector(".previous").addEventListener("click", () => {
-            document.querySelector(".welcome-page_inner_section-one").classList.remove("de-active")
-
-            if (!document.querySelector(".welcome-page_inner_section-one").classList.contains("de-active")) {
-                return localStorage.setItem("page", "page1")
-            }
-            localStorage.setItem("page", "page2")
-        })
-
-        document.querySelector(".previous").addEventListener("click", () => document.querySelector(".welcome-page_inner_section-two").classList.remove("active"))
         document.querySelector(".switch").addEventListener("click", () => document.querySelector(".switch").classList.toggle("active"))
         document.querySelector(".switch").addEventListener("click", () => document.querySelector("h1").classList.toggle("h1"))
         document.querySelector(".switch").addEventListener("click", () => document.querySelector("h5").classList.toggle("h5"))
         document.querySelector(".switch").addEventListener("click", () => document.querySelector("p").classList.toggle("p"))
         document.querySelector(".switch").addEventListener("click", () => document.querySelector("ul").classList.toggle("li"))
         document.querySelector(".switch").addEventListener("click", () => document.querySelector("i").classList.toggle("i"))
+
     </script>
 </body>
 
